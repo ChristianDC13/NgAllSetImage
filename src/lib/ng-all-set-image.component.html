@@ -1,0 +1,7 @@
+<figure [class]="conainerClass" [style]="containerStyles">
+  <img [class]="id + ' ' + imageClass" [id]="id" [style]="imageStyle" loading="lazy" [alt]="alt" [title]="title"
+    (error)="handleError()" [width]="width" [height]="height" />
+  <figcaption ng-if="caption" [style]="captionStyle" [class]="captionClass">
+    {{ caption }}
+  </figcaption>
+</figure>
